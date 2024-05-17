@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warner Bros. - Feedback</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .hero-banner {
+      position: relative;
+      height: 500px;
+      text-align: center;
+      padding-top: 150px;
+      color: #fffff;
+    }
+    .hero-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; /* Places the image behind the text */
+    }
+    .navbar-brand img {
+      height: 40px;
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/wblogo.png" alt="Warner Bros. Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="movies.html">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tv_shows.html">TV Shows</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="games&apps.html">Games & Apps</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="collections.html">Collections</a>
+        </li>
+        <li class="nav-item  active">
+          <a class="nav-link" href="feedback.html">Feedback</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="hero-banner">
+    <img src="images/feedback_banner.png" alt="Cine Background Banner">
+    <h1>Feedback</h1>
+    <p>Your feedback is invaluable to us!</p>
+  </div>
+
+  <!-- Feedback Form -->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="feedbackForm" action="mailto:wamemogatusi3@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="feedback">Feedback:</label>
+              <textarea class="form-control" id="feedback" name="feedback" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
